@@ -29,8 +29,46 @@
     --space-normal:1rem;
     --space-x-small:0.5rem;
     --space-2x-small:0.25rem;
+    /* 색상 */
+
+    --navy-0:#8794A8;
+    --navy-100:#7B8CA7;
+    --navy-200:#6F84A4;
+    --navy-300:#657CA1;
+    --navy-400:#5B739B;
+    --navy-500:#526B93;
+    --navy-600:#496289;
+    --navy-700:#40577C;
+    --navy-800:#374C6E;
+    --navy-900:#2F415E;
+    
+    
+    /* 그레이컬러 */
+    --gray-0:#FFFFFF;    
+    --gray-100:#FBFBFB;    
+    --gray-200:#F3F3F3;    
+    --gray-300:#E7E7E7;    
+    --gray-400:#D6D6D6;    
+    --gray-500:#BEBEBE;    
+    --gray-600:#9E9E9E;    
+    --gray-700:#777777;    
+    --gray-800:#494949;    
+    --gray-900:#1A1A1A;    
+
+    /* 브랜드컬러 */
+    --maincolors-black-bg1:#222831;
+    --maincolors-black-bg2:#393E46;
+    --maincolors-black-greenblue:#00ADB5;
+    --maincolors-black-white:#EEEEEE;
 
 }
 html{
     font-size: var(--fs-pc);
+    font-family: 'Pretendard',sans-serif;
 }
+
+.common-frame{
+    padding: 0 var(--space-2x-large);
+    border: 1px solid blue;
+}
+
