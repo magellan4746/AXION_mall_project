@@ -1,3 +1,91 @@
 header{
-    /* border: 1px solid red; */
 }
+.header-top{
+    &>.common-frame{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.user-menu{
+    display: flex;
+    gap: 1rem;
+}
+.user-menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.25rem;
+}
+.lnb{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 6.25rem;
+}
+.user-menu img{
+    height: 1.5rem;
+}
+.user-menu{
+    font-size: var(--fs-body2);
+}
+
+.gnb2depth{
+    position: absolute;
+    left: 0;
+    top:50px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid red;
+    padding:1.75rem 0;
+    display: none;
+    box-shadow: 0 10px  10px rgba(0, 0, 0, 0.22);
+}
+.gnb>li:hover .gnb2depth{
+    display: block;
+}
+
+.gnb2depth .common-frame{
+    display: flex;
+    gap: 4%;
+}
+
+.gnb2depth .common-frame>section h4{
+    margin-bottom: 1.1rem;
+}
+.gnb2depth .common-frame>section ul{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+    font-weight: var(--fw1);
+    font-size: var(--fs-body1);
+    border-left: 1px solid var(--maincolors-black-bg1);
+    padding-left: 0.4rem;
+
+}
+.gnb2depth a:hover{color: var(--maincolors-black-greenblue);}
+
+.header-bottom{
+    background-color: var(--maincolors-black-bg1);
+    position: relative;
+}
+
+.gnb{
+    display: flex;
+    gap: var(--space-normal);
+    height: 50px;
+    font-weight: var(--fw2);
+}
+
+.gnb>li>a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: var(--gray-0);
+
+}
+.gnb>li>a:hover{
+    color: var(--maincolors-black-greenblue);
+}
+
