@@ -77,3 +77,21 @@ h1{font-size: var(--fs-h1);}
 h2{font-size: var(--fs-h2);}
 h3{font-size: var(--fs-h3);}
 h4{font-size: var(--fs-h4);}
+
+@media (max-width:1024px){
+    html{
+        font-size: var(--fs-pad);
+    }
+    .common-frame{
+        padding: 0 var(--space-x-large);
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: var(--fs-mo);
+    }
+    .common-frame{
+        padding: 0 var(--space-normal);
+    }
+}
