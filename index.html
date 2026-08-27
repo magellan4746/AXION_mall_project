@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+    <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
             <div class="common-frame">
@@ -393,7 +399,7 @@
             </div>
         </div>
     </div>
-
+    <!-- 패드 / 모바일용 전체 메가 메뉴 -->
     <div class="smart-overlay-menu">
         <div class="smart-overlay-menu-1">
             <div class="common-frame">
@@ -760,6 +766,52 @@
             </div>
         </div>
     </div>
+    <main>
+        <!-- 히어로 배너 슬라이드 -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/slide_pc1.jpg" alt="공간은 단순할 수록 오래 머뭅니다">
+                    <img class="tab" src="./img/slide_tab1.jpg" alt="공간은 단순할 수록 오래 머뭅니다">
+                    <img class="mo" src="./img/slide_mo1.jpg" alt="공간은 단순할 수록 오래 머뭅니다">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/slide_pc2.jpg" alt="SUMMER LIVING SALE 30% OFF">
+                    <img class="tab" src="./img/slide_tab2.jpg" alt="SUMMER LIVING SALE 30% OFF">
+                    <img class="mo" src="./img/slide_mo2.jpg" alt="SUMMER LIVING SALE 30% OFF">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/slide_pc3.jpg" alt="NEW ARRIVALS 2026">
+                    <img class="tab" src="./img/slide_tab3.jpg" alt="NEW ARRIVALS 2026">
+                    <img class="mo" src="./img/slide_mo3.jpg" alt="NEW ARRIVALS 2026">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            const station = new Swiper('.hero-slider', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 4000,
+                },
+                speed : 1000,
+            });
+    
+        </script>
+        <div class="banner-line">
+            <div class="common-frame">
+                <span>AXION NEWS</span>
+                <h4>새롭게 업데이트된 AXION의 새로운 컬렉션부터 브랜드의 최신 소식,  공간을 변화시키는 새로운 이야기와 다양한 브랜드 소식, AXION의 새로운 소식과 진행 중인 이벤트를 한눈에 확인해보세요.</h4>
+                <a href="#" class="btn-style">공지사항 확인하기<img src="./img/reicon_arrow-right-white.svg" alt="공지사항 바로가기"></a>
+    
+            </div>
+    
+        </div>
+
+    </main>
 </body>
 
 </html>

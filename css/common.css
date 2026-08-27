@@ -68,10 +68,19 @@ html{
     font-weight: var(--fw1);
     color: var(--gray-900);
 }
+main{
+    margin-top: 154px;
+
+}
 
 .common-frame{
     padding: 0 var(--space-2x-large);
 }
+
+.pc{display: block;}
+.tab{display: none;}
+.mo{display: none;}
+
 
 h1{font-size: var(--fs-h1);}
 h2{font-size: var(--fs-h2);}
@@ -79,6 +88,13 @@ h3{font-size: var(--fs-h3);}
 h4{font-size: var(--fs-h4);}
 
 @media (max-width:1024px){
+    main{
+        margin-top: 5rem;
+    }
+    .pc{display: none;}
+    .tab{display: block;}
+    .mo{display: none;}
+
     html{
         font-size: var(--fs-pad);
     }
@@ -88,6 +104,9 @@ h4{font-size: var(--fs-h4);}
 }
 
 @media (max-width:768px){
+    .pc{display: none;}
+    .tab{display: none;}
+    .mo{display: block;}
     html{
         font-size: var(--fs-mo);
     }
