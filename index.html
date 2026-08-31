@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/header.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -819,7 +817,7 @@
                     <span></span>
                     <p>당신이 머무는 공간, 그곳의 모든 순간과 함께, AXION이 함께합니다.</p>
                 </div>
-                <div class="swiper cardist-wrap">
+                <div class="swiper cardlist-wrap">
                     <ul class="cardlist swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="#">
@@ -848,24 +846,21 @@
                     </ul>
                 </div>
                 <script>
-                    const cardlist = new Swiper('.cardist-wrap', {
+                    const cardlist = new Swiper('.cardlist-wrap', {
                         breakpoints: {
                             100: {
                                 slidesPerView: 1.2,
                                 spaceBetween: 12,
                             },
-                            768: {
+                            769: {
                                 slidesPerView: 2.2,
                                 spaceBetween: 14,
                             },
                             1024: {
                                 slidesPerView: 3.3,
                                 spaceBetween: 16,
-                            },
-                            autoplay: {
-                                delay: 3000
-                            },
-                        },
+                            }
+                        }
                     });
                 </script>
             </div>
@@ -897,6 +892,7 @@
                             <div class="story-product">
                                 <a href="#">
                                     <figure>
+                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">1256</span>
                                         <img src="./img/c1-2.jpg" alt="MILO Drawer 리뷰이미지">
                                     </figure>
                                     <div class="story-product-txt">
@@ -937,6 +933,7 @@
                             <div class="story-product">
                                 <a href="#">
                                     <figure>
+                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">2088</span>
                                         <img src="./img/c2-2.jpg" alt="AXION LINE Desk 리뷰이미지">
                                     </figure>
                                     <div class="story-product-txt">
@@ -977,6 +974,7 @@
                             <div class="story-product">
                                 <a href="#">
                                     <figure>
+                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">684</span>
                                         <img src="./img/c3-2.jpg" alt="VORTEX CORE Gaming Chair 리뷰이미지">
                                     </figure>
                                     <div class="story-product-txt">
@@ -1017,6 +1015,7 @@
                             <div class="story-product">
                                 <a href="#">
                                     <figure>
+                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">100</span>
                                         <img src="./img/c4-2.jpg" alt="Moss Lounge Chair 리뷰이미지">
                                     </figure>
                                     <div class="story-product-txt">
@@ -1053,14 +1052,169 @@
                             1024: {
                                 slidesPerView: 3.3,
                                 spaceBetween: 16,
-                            },
-                            autoplay: {
-                                delay: 3000
-                            },
-                        },
+                            }
+                        }
 
                     });
                 </script>
+            </div>
+        </section>
+        <section class="con3">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>SPECIAL OFFER</h1>
+                    <span></span>
+                    <p>좋아하는 공간을 더 좋은 가격으로.</p>
+                </div>
+                <ul class="sale">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge noab"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/product_sofa.jpg" alt="특가상품">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">LUME Modular Sofa</h4>
+                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>100,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 30%</div>
+                                        <div class="pay"><b>70,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

@@ -60,7 +60,9 @@
     --maincolors-black-bg2:#393E46;
     --maincolors-black-greenblue:#00ADB5;
     --maincolors-black-white:#EEEEEE;
-
+    
+    /* 서브컬러 */
+    --red:#F94848;
 }
 html{
     font-size: var(--fs-pc);
@@ -86,6 +88,7 @@ h1{font-size: var(--fs-h1);}
 h2{font-size: var(--fs-h2);}
 h3{font-size: var(--fs-h3);}
 h4{font-size: var(--fs-h4);}
+p{line-height: var(--lh2);}
 
 @media (max-width:1024px){
     main{
