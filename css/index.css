@@ -239,7 +239,6 @@
 }
 
 .sale li figure {
-    border: 1px solid red;
     line-height: 0;
     margin-bottom: 1.75rem;
 }
@@ -270,6 +269,14 @@
 .sale-txt {
     gap: 0 1rem;
 }
+.sale-text>h4{
+    margin-bottom: 0.5rem;
+}
+.pay-frame, .sale-text>p{
+    margin-bottom: 1rem;
+}
+
+
 
 @media(max-width:1024px) {
     .banner-line .common-frame {
@@ -312,6 +319,9 @@
     }
     
 }
+.sale {
+        grid-template-columns: repeat(2,minmax(50px,1fr));
+    }
 
 @media(max-width:340px) {
     .banner-line .common-frame {
