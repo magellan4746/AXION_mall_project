@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXION 쇼핑몰 - 취업용 포트폴리오</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/list.css">
+
     <script src="./js/header.js" defer></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.js"></script>
-    <!-- 제품 정보 -->
-    <script src="./js/product.js"></script>
-    <script src="./js/product-control.js" defer></script>
+
 </head>
 
 <body>
@@ -769,316 +773,33 @@
         </div>
     </div>
     <main>
-        <!-- 히어로 배너 슬라이드 -->
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/slide_pc1.jpg" alt="공간은 단순할 수록 오래 머뭅니다">
-                    <img class="tab" src="./img/slide_tab1.jpg" alt="공간은 단순할 수록 오래 머뭅니다">
-                    <img class="mo" src="./img/slide_mo1.jpg" alt="공간은 단순할 수록 오래 머뭅니다">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/slide_pc2.jpg" alt="SUMMER LIVING SALE 30% OFF">
-                    <img class="tab" src="./img/slide_tab2.jpg" alt="SUMMER LIVING SALE 30% OFF">
-                    <img class="mo" src="./img/slide_mo2.jpg" alt="SUMMER LIVING SALE 30% OFF">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/slide_pc3.jpg" alt="NEW ARRIVALS 2026">
-                    <img class="tab" src="./img/slide_tab3.jpg" alt="NEW ARRIVALS 2026">
-                    <img class="mo" src="./img/slide_mo3.jpg" alt="NEW ARRIVALS 2026">
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <script>
-            const station = new Swiper('.hero-slider', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-                autoplay: {
-                    delay: 4000,
-                },
-                speed: 1000,
-            });
+        <div class="hero-banner">
+            <a href="#">
+                <picture>
+                    <source media="(max-width:768px)" srcset="./img/hero-banner-mo.jpg">
+                    <source media="(max-width:1024px)" srcset="./img/hero-banner-pad.jpg">
+                    <img src="./img/hero-banner-pc.jpg" alt="길거리 사진">
 
-        </script>
-        <div class="banner-line">
-            <div class="common-frame">
-                <span>AXION NEWS</span>
-                <h4>새롭게 업데이트된 AXION의 새로운 컬렉션부터 브랜드의 최신 소식, 공간을 변화시키는 새로운 이야기와 다양한 브랜드 소식, AXION의 새로운 소식과 진행 중인 이벤트를 한눈에
-                    확인해보세요.</h4>
-                <a href="#" class="btn-style">공지사항 확인하기<img src="./img/reicon_arrow-right-white.svg"
-                        alt="공지사항 바로가기"></a>
-
-            </div>
-
+                </picture>
+            </a>
         </div>
         <section class="con1">
             <div class="common-frame">
                 <div class="title">
-                    <h1>Every Resident with AXION</h1>
+                    <h1>NEW ARRIVALS</h1>
                     <span></span>
-                    <p>당신이 머무는 공간, 그곳의 모든 순간과 함께, AXION이 함께합니다.</p>
+                    <p>새로운 가구가 입고</p>
                 </div>
-                <div class="swiper cardlist-wrap">
-                    <ul class="cardlist swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">리빙</div>
-                                <img src="./img/con1-1.jpg" alt="living room">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">다이닝</div>
-                                <img src="./img/con1-2.jpg" alt="dinning room">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">주방</div>
-                                <img src="./img/con1-3.jpg" alt="kitchen">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">침실</div>
-                                <img src="./img/con1-4.jpg" alt="bed room">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    const cardlist = new Swiper('.cardlist-wrap', {
-                        breakpoints: {
-                            100: {
-                                slidesPerView: 1.2,
-                                spaceBetween: 12,
-                            },
-                            769: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 3.3,
-                                spaceBetween: 16,
-                            }
-                        }
-                    });
-                </script>
-            </div>
-        </section>
-        <section class="con2">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>언제나 함께 AXION</h1>
-                </div>
-                <div class="swiper review-story-wrap">
-                    <ul class="review-story swiper-wrapper">
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/c1-1.jpg" alt="MILO Drawer">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                </div>
-                                <h4>MILO Drawer</h4>
-                                <p>넉넉한 수납과 단정한 디자인으로
-                                    어느 공간에나 자연스럽게 어울립니다.
-                                </p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">1256</span>
-                                        <img src="./img/c1-2.jpg" alt="MILO Drawer 리뷰이미지">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            생각보다 훨씬 깔끔해요
-                                        </div>
-                                        <div class="product-category">
-                                            Storage / 수납가구
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>100,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount"> 30%</div>
-                                            <div class="pay"><b>70,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/c2-1.jpg" alt="AXION LINE Desk">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                </div>
-                                <h4>AXION LINE Desk</h4>
-                                <p>넓은 작업 공간과 깔끔한 실루엣으로
-                                    일상과 업무를 편안하게 이어갑니다.
-                                </p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">2088</span>
-                                        <img src="./img/c2-2.jpg" alt="AXION LINE Desk 리뷰이미지">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            작업 공간이 깔끔해졌어요
-                                        </div>
-                                        <div class="product-category">
-                                            Desk / 책상
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>589,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount"> 25%</div>
-                                            <div class="pay"><b>441,750</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/c3-1.jpg" alt="VORTEX CORE Gaming Chair">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                </div>
-                                <h4>VORTEX CORE Gaming Chair</h4>
-                                <p>안정적인 착좌감과 탄탄한 디자인으로
-                                    게임부터 작업까지 든든하게 받쳐줍니다.
-                                </p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">684</span>
-                                        <img src="./img/c3-2.jpg" alt="VORTEX CORE Gaming Chair 리뷰이미지">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            오래 앉아 있어도 편안합니다
-                                        </div>
-                                        <div class="product-category">
-                                            Gaming / 게이밍 체어
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>479,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount"> 30%</div>
-                                            <div class="pay"><b>335,300</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/c4-1.jpg" alt="Moss Lounge Chair">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                    <img src="./img/star.svg" alt="병점 별">
-                                </div>
-                                <h4>Moss Lounge Chair</h4>
-                                <p>부드러운 형태와 편안한 착좌감으로
-                                    거실과 침실에 따뜻한 분위기를 더합니다.
-                                </p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like_badge"><img src="./img/heart-1.svg" alt="좋아요 하트">100</span>
-                                        <img src="./img/c4-2.jpg" alt="Moss Lounge Chair 리뷰이미지">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            심플하지만 확실히 예뻐요
-                                        </div>
-                                        <div class="product-category">
-                                            Chair / 의자
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>399,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount"> 20%</div>
-                                            <div class="pay"><b>319,200</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    const reviewStory = new Swiper('.review-story-wrap', {
-                        breakpoints: {
-                            100: {
-                                slidesPerView: 1.2,
-                                spaceBetween: 12,
-                            },
-                            300: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 3.3,
-                                spaceBetween: 16,
-                            }
-                        }
 
-                    });
-                </script>
-            </div>
-        </section>
-        <section class="con3">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>SPECIAL OFFER</h1>
-                    <span></span>
-                    <p>좋아하는 공간을 더 좋은 가격으로.</p>
-                </div>
-                <ul class="sale grid-list">
+                <ul class="new-product grid-list">
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./img/ss1.jpg" alt="특가상품">
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
                             </figure>
                             <div class="sale-text">
-                                <h4 class="title-1">LUME Modular Sofa</h4>
-                                <p class="desc-1">부드러운 곡선과 넉넉한 좌석으로 완성한 모던 모듈러 소파입니다.</p>
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
                                 <div class="pay-frame">
                                     <div class="pay-original">
                                         <span>1,290,000</span>원
@@ -1088,14 +809,234 @@
                                         <div class="pay"><b>1,096,500</b>원</div>
                                     </div>
                                 </div>
-                                <span class="like_badge noab"><img src="./img/heart-1.svg" alt="좋아요 하트">6456</span>
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/n-1.jpg" alt="NOVA Modular Sofa">
+                            </figure>
+                            <div class="sale-text">
+                                <h4 class="title-1">NOVA Modular Sofa</h4>
+                                <p class="desc-1">낮고 넓은 실루엣의 모듈형 패브릭 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>1,290,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount"> 15%</div>
+                                        <div class="pay"><b>1,096,500</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    
+
                 </ul>
             </div>
         </section>
-
     </main>
     <!-- 푸터 -->
     <footer>
@@ -1138,7 +1079,7 @@
                     <div class="logof">
                         <img src="./img/logo_white.svg" alt="AXION로고">
                         <div class="slogan">Design for Tomorrow, Craft for Everyday.</div>
-                        
+
                     </div>
                 </div>
             </div>

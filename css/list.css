@@ -1,0 +1,47 @@
+.hero-banner img {
+    width: 100%;
+}
+
+.pay-original {
+    color: var(--gray-600);
+    font-size: var(--fs-body2);
+
+}
+
+.pay-original span {
+    text-decoration: line-through;
+}
+
+.pay-discount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.discount {
+    font-size: var(--fs-body2);
+}
+
+.pay {
+    color: var(--red);
+}
+
+
+
+.sale li figure {
+    line-height: 0;
+    margin-bottom: 1.75rem;
+}
+
+.sale-txt {
+    gap: 0 1rem;
+}
+
+.sale-text>h4 {
+    margin-bottom: 0.5rem;
+}
+
+.pay-frame,
+.sale-text>p {
+    margin-bottom: 1rem;
+}

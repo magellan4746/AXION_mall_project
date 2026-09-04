@@ -1,4 +1,5 @@
 footer {
+    width: 100%;
     background-color: #000;
     color: #fff;
     padding-top: 3rem;
@@ -6,7 +7,7 @@ footer {
 }
 
 footer .common-frame {
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -37,9 +38,8 @@ footer .common-frame {
 }
 
 .coinfo {
-    width: 1024px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-columns: repeat(2, 0.5fr 1fr);
     gap: 1rem 1rem;
 }
 
@@ -48,7 +48,7 @@ footer .common-frame {
 }
 
 .foot2 {
-    width: 450px;
+    width: 100%;
 }
 
 .logof img {
@@ -95,21 +95,50 @@ footer .common-frame {
     .foot-navi {
         flex-direction: column;
         justify-content: initial;
-        gap: 28px;
+        gap: 2rem;
     }
-    .foot2{
+
+    .foot2 {
         margin: 0 auto;
     }
+
     .sns {
         display: flex;
         gap: 1rem;
         justify-content: center;
     }
-    .logof{
+
+    .logof {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
 
+    .coinfo {
+        width: auto;
+
+    }
+
+    .cstime {
+        width: 18rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        gap: 1rem 1rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    .footmenu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 1rem;
+    }
+
+    .coinfo {
+        display: grid;
+        grid-template-columns: repeat(1, 0.3fr 1fr);
+        gap: 1rem 1rem;
+    }
 }
