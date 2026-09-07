@@ -1,7 +1,9 @@
 .hero-banner img {
     width: 100%;
 }
-
+.title-1{
+    font-weight: var(--fw2);
+}
 .pay-original {
     color: var(--gray-600);
     font-size: var(--fs-body2);
@@ -28,7 +30,7 @@
 
 
 
-.sale li figure {
+.grid-list li figure {
     line-height: 0;
     margin-bottom: 1.75rem;
 }
