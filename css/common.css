@@ -69,6 +69,7 @@ html{
     font-family: 'Pretendard',sans-serif;
     font-weight: var(--fw1);
     color: var(--gray-900);
+    scroll-behavior: smooth;
 }
 main{
     margin-top: 154px;

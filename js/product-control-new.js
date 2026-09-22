@@ -11,7 +11,7 @@ function formatMoney(value) {
 const saleUlTag = document.querySelector('.new-product');
 let result = newProductArray.map(product => {
     return `<li>
-                <a href="#">
+                <a href="./product.html?pid=${product.pid}">
                             <figure>
                                 <img src="./img/${product.pthumbFilename}" alt="특가상품">
                             </figure>

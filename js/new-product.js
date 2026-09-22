@@ -4,7 +4,7 @@ let newProductArray = [
         pname:'NOVA Modular Sofa',
         pdesc:`낮고 넓은 실루엣의 모듈형 패브릭 소파`,
         price:1890000,
-        pdiscount:0,
+        pdiscount:0.15,
         pthumbFilename:'n-1.jpg',
     },
     {
