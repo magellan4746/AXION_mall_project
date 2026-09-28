@@ -408,7 +408,7 @@
     padding: 1rem 1.2rem;
     text-align: left;
     background-color: var(--gray-100);
-    
+
 }
 
 .product-table td {
@@ -439,6 +439,20 @@
 
 .del-desc {
     color: var(--gray-700);
+}
+
+/* 리뷰 */
+
+.no-review {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-300);
+    color: var(--gray-600);
+    border-radius: 1rem;
+    font-size: var(--fs-body1);
+    font-weight: var(--fw1);
 }
 
 @media(max-width:1400px) {
