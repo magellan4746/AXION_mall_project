@@ -5,6 +5,10 @@ header {
     z-index: 150;
     width: 100%;
     background-color: #fff;
+    transition:all 1s ease 0s;
+}
+header.on{
+    transform: translateY(-104px);
 }
 
 .header-top {
